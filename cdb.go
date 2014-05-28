@@ -11,13 +11,6 @@ type Cdb struct {
 	fp     *os.File
 	bucket [][]HashPointer
 	p      uint32 //global pointer, used to track file position
-	loop   uint32 // number of hash slots searched under this key
-	khash  uint32 // initialized if loop is nonzero
-	kpos   uint32 // initialized if loop is nonzero
-	hpos   uint32 // initialized if loop is nonzero
-	hslots uint32 // initialized if loop is nonzero
-	dpos   uint32 // initialized if FindNext() returns true
-	dlen   uint32 // initialized if FindNext() returns true
 }
 
 

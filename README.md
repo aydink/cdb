@@ -1,0 +1,1 @@
+Pure Go implementation of Cdb (Constant database)
